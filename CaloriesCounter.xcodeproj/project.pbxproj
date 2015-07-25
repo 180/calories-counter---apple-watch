@@ -19,6 +19,7 @@
 		4EF4E1371B63AD13004C6819 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF4E1351B63AD13004C6819 /* Interface.storyboard */; };
 		4EF4E1391B63AD13004C6819 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF4E1381B63AD13004C6819 /* Images.xcassets */; };
 		4EF4E13C1B63AD13004C6819 /* CaloriesCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4EF4E1241B63AD13004C6819 /* CaloriesCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4EF4E19B1B641717004C6819 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4E19A1B641717004C6819 /* GlanceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		4EF4E1341B63AD13004C6819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF4E1361B63AD13004C6819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		4EF4E1381B63AD13004C6819 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4EF4E19A1B641717004C6819 /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF4E1281B63AD13004C6819 /* InterfaceController.swift */,
+				4EF4E19A1B641717004C6819 /* GlanceController.swift */,
 				4EF4E12A1B63AD13004C6819 /* Images.xcassets */,
 				4EF4E1261B63AD13004C6819 /* Supporting Files */,
 			);
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF4E1291B63AD13004C6819 /* InterfaceController.swift in Sources */,
+				4EF4E19B1B641717004C6819 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +645,7 @@
 				4EF4E11C1B63ACD9004C6819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EF4E11D1B63ACD9004C6819 /* Build configuration list for PBXNativeTarget "CaloriesCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +654,7 @@
 				4EF4E11F1B63ACD9004C6819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EF4E13D1B63AD13004C6819 /* Build configuration list for PBXNativeTarget "CaloriesCounter WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +663,7 @@
 				4EF4E13F1B63AD13004C6819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EF4E1401B63AD13004C6819 /* Build configuration list for PBXNativeTarget "CaloriesCounter WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +672,7 @@
 				4EF4E1421B63AD13004C6819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

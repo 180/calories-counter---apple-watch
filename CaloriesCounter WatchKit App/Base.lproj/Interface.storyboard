@@ -33,7 +33,7 @@
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                         </label>
-                        <label alignment="left" text="2560 CAL" id="QBn-8r-jMD">
+                        <label alignment="left" text="0 CAL" id="QBn-8r-jMD">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
                     </items>
@@ -44,6 +44,42 @@
                     </connections>
                 </controller>
             </objects>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="77O-Lx-mZh">
+            <objects>
+                <glanceController id="RHM-jE-mmG" customClass="GlanceController" customModule="CaloriesCounter_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="VRP-gO-7wc">
+                            <items>
+                                <label width="136" height="22.5" alignment="left" text="Calories Counter" textAlignment="center" id="1DB-gE-DiJ">
+                                    <color key="textColor" red="0.93333333730000001" green="0.40850245870000002" blue="0.28649056220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="rWi-DW-RYp">
+                            <items>
+                                <label alignment="left" text="You can eat " id="s6I-Ox-z3j"/>
+                                <group width="1" alignment="left" id="pP8-xe-bjn">
+                                    <items>
+                                        <label height="37" alignment="left" verticalAlignment="bottom" text="400" id="2Ay-nW-SZY">
+                                            <color key="textColor" red="0.93333333730000001" green="0.40850245870000002" blue="0.28649056220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="36"/>
+                                        </label>
+                                        <label alignment="left" verticalAlignment="bottom" text="calories" id="rK1-Bh-wI5"/>
+                                    </items>
+                                </group>
+                                <label width="136" alignment="left" text="more today!" textAlignment="justified" id="HFz-Kp-Oil"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLeftLabel" destination="2Ay-nW-SZY" id="Y8N-8v-bFa"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="247" y="529"/>
         </scene>
     </scenes>
 </document>

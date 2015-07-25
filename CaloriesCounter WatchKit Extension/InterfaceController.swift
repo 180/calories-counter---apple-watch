@@ -38,6 +38,9 @@ class InterfaceController: WKInterfaceController {
         caloriesTotal = caloriesTotal + calories
         calories = 100
         updateScreen()
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setValue(caloriesTotal, forKey: "caloriesTotal")
     }
     
     @IBAction func sliderValueChanged(value: Float) {
