@@ -17,7 +17,7 @@ class GlanceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        caloriesLeftLabel.setText("2700")
     }
 
     override func willActivate() {
@@ -26,9 +26,14 @@ class GlanceController: WKInterfaceController {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let calories = defaults.integerForKey("caloriesTotal")
+        let caloriesLeft = 2700 - calories
         
         if calories > 0 {
-            caloriesLeftLabel.setText("\(2700 - calories)")
+            caloriesLeftLabel.setText("\(caloriesLeft)")
+        }
+        
+        if (caloriesLeft < 0) {
+            caloriesLeftLabel.setText("0")
         }
 
     }

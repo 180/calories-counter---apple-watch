@@ -21,17 +21,25 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let calories = defaults.integerForKey("caloriesTotal")
+        
+        if calories > 0 {
+            caloriesTotal = calories
+        }
+        
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        totalCaloriesLabel.setText("\(caloriesTotal) CAL")
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        
     }
     
     @IBAction func addButtonTapped() {
