@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CaloriesCounter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="135.5" alignment="left" text="Calories Counter" textAlignment="center" id="HQ9-9B-PJv">
+                            <color key="textColor" red="0.93333333730000001" green="0.40850245867158408" blue="0.28649056219010394" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="136" alignment="left" text="100 CAL" textAlignment="center" id="xHG-Xj-GG9"/>
+                        <slider width="1" alignment="left" value="100" maximum="1000" steps="40" id="6nC-oN-fZ5">
+                            <color key="color" red="0.93333333730000001" green="0.40850245870000002" blue="0.28649056220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="AgC-eL-Hgc" id="jWS-is-Rmx"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Add" id="7Ak-Ea-Cgs">
+                            <color key="backgroundColor" red="0.93333333730000001" green="0.40850245870000002" blue="0.28649056220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="jw9-As-8fV"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="GKj-Uv-mqf">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label alignment="left" text="TOTAL CALORIES" id="J7Z-F6-YdF">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label alignment="left" text="2560 CAL" id="QBn-8r-jMD">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="xHG-Xj-GG9" id="tnf-1I-va6"/>
+                        <outlet property="slider" destination="6nC-oN-fZ5" id="JVK-VB-yrW"/>
+                        <outlet property="totalCaloriesLabel" destination="QBn-8r-jMD" id="t0J-p4-Cif"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
